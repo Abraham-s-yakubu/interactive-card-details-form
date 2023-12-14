@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left">
+        <h1 class="title-text">Stay updated!</h1>
+        <p class="body-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="lists">
+          <div class="list">
+            <img
+              class="list-img"
+              src="./assets/images/icon-list.svg"
+              alt="check icon"
+            />
+            <p class="list-text">Product discovery and building what matters</p>
+          </div>
+          <div class="list">
+            <img
+              class="list-img"
+              src="./assets/images/icon-list.svg"
+              alt="check icon"
+            />
+            <p class="list-text">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="list">
+            <img
+              class="list-img"
+              src="./assets/images/icon-list.svg"
+              alt="check icon"
+            />
+            <p class="list-text">And much more!</p>
+          </div>
+        </div>
+        <form id="form" class="form" action="/">
+          <div class="email">
+            <div class="email-label-error">
+              <label for="email" class="email-label">Email address</label>
+              <div class="email-error"></div>
+            </div>
+            <input
+              type="email"
+              name="username"
+              id="email-input"
+              class="email-input"
+              placeholder="email@company.com"
+            />
+            <button type="submit" class="btn">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="success-container">
+      <img src="./assets/images/icon-success.svg" alt="" class="success-img" />
+      <div class="sucess-header title-text">Thanks for subscribing!</div>
+      <div class="sucess-body">
+        A confirmation email has been sent to
+        <span class="success-email">ash@loremcompany.com</span>. Please open it
+        and click the button inside to confirm your subscription.
+      </div>
+      <button class="success-btn btn">Dismiss message</button>
+    </div>
+  </body>
+</html>
